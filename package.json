@@ -1,0 +1,55 @@
+{
+  "name": "egg-dmdb",
+  "version": "1.0.4",
+  "description": "eggjs达梦数据库操作插件",
+  "eggPlugin": {
+    "name": "dmdb"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "dmdb"
+  ],
+  "dependencies": {
+    "dmdb": "^1.0.19862"
+  },
+  "devDependencies": {
+    "egg": "^2",
+    "egg-bin": "^4",
+    "egg-ci": "^1",
+    "egg-mock": "^3",
+    "eslint": "^5",
+    "eslint-config-egg": "^7"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "lib",
+    "test"
+  ],
+  "ci": {
+    "version": "12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulingdsj/egg-dmdb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tulingdsj/egg-dmdb/issues"
+  },
+  "homepage": "https://www.npmjs.com/package/egg-dmdb?activeTab=readme",
+  "author": "tulingdsj",
+  "license": "MIT"
+}
